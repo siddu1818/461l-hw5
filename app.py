@@ -1,8 +1,8 @@
 import os
-from flask import Flask, request, jsonify, send_from_directory
+from flask import Flask, request, send_from_directory
 
 BUILD_DIR = os.path.abspath(
-    os.path.join(os.path.dirname(__file__), "..", "ee461l-task3", "build")
+    os.path.join(os.path.dirname(__file__), "ee461l-task3", "build")
 )
 app = Flask(__name__, static_folder=BUILD_DIR, static_url_path="/")
 
